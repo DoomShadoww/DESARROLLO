@@ -1,0 +1,151 @@
+﻿
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #0f0c29; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #24243e, #302b63, #0f0c29); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.user_card {
+    height: 400px;
+    width: 350px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background: #000046; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #065b72,#302b63, #000046); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #065b72,#302b63, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+}
+
+.links {
+    color: azure
+}
+
+.brand_logo_container {
+    color: aliceblue;
+    position: absolute;
+    height: 170px;
+    width: 170px;
+    top: -75px;
+    border-radius: 50%;
+    background: #00004674;
+    padding: 10px;
+    text-align: center;
+}
+
+.brand_logo {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.form_container {
+    margin-top: 100px;
+}
+
+.login_btn {
+    width: 100%;
+    background: #2b37c085 !important;
+    color: white !important;
+}
+
+    .login_btn:focus {
+        box-shadow: none !important;
+        outline: 0px !important;
+    }
+
+.login_container {
+    padding: 0 2rem;
+}
+
+.input-group-text {
+    background: #2b37c085 !important;
+    color: white !important;
+    border: 0 !important;
+    border-radius: 0.25rem 0 0 0.25rem !important;
+}
+
+.input_user,
+.input_pass:focus {
+    box-shadow: none !important;
+    outline: 0px !important;
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #2b37c085 !important;
+}
+
+.registro {
+    text-decoration: none;
+    color: azure;
+}
+
+    .registro:hover {
+        text-decoration: none;
+        color: #2b37c085;
+    }
+
+
+/* Estilos para la tabla */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 20px;
+}
+
+    .table th,
+    .table td {
+        padding: 8px;
+        border: 1px solid #ddd;
+    }
+
+    .table th {
+        background-color: #f2f2f2;
+        text-align: left;
+    }
+
+/* Estilos para los enlaces de acción */
+.action-links a {
+    margin-right: 10px;
+    color: #337ab7;
+}
+
+    .action-links a:hover {
+        text-decoration: none;
+    }
+
+/* Estilos para el botón de "Crear Nuevo Usuario" */
+.create-button {
+    margin-bottom: 20px;
+}
+
+    .create-button a {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #5cb85c;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+        .create-button a:hover {
+            background-color: #4cae4c;
+        }
+
+
+
+

@@ -1,0 +1,67 @@
+﻿@model IEnumerable<PRUEBAS_LOGIN.Models.Usuario>
+
+@{
+    ViewBag.Title = "Lista de Usuarios";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<head>
+    <!-- Otras etiquetas de encabezado -->
+    <link href="@Url.Content("~/Content/css/style.css")" rel="stylesheet" />
+</head>
+
+<p>
+    @Html.ActionLink("Crear Nuevo Usuario", "Create")
+</p>
+
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Correo</th>
+        <th>Clave</th>
+        <th>Acciones</th>
+    </tr>
+
+
+    @foreach (var usuario in Model)
+    {
+        <tr>
+            <td>@usuario.IdUsuario</td>
+            <td>@usuario.Correo</td>
+            <td>@usuario.Clave</td>
+
+            <td>
+                @Html.ActionLink("Detalles", "Details", new { id = usuario.IdUsuario })
+                @Html.ActionLink("Editar", "Edit", new { id = usuario.IdUsuario })
+                @Html.ActionLink("Eliminar", "Delete", new { id = usuario.IdUsuario })
+            </td>
+        </tr>
+    }
+
+
+
+</table>
+
+@*@if (Model != null)
+    {
+        foreach (var usuario in Model)
+        {
+            <tr>
+                <td>@usuario.IdUsuario</td>
+                <td>@usuario.Correo</td>
+                <td>@usuario.Clave</td>
+
+                <td>
+                    @Html.ActionLink("Detalles", "Details", new { id = usuario.IdUsuario })
+                    @Html.ActionLink("Editar", "Edit", new { id = usuario.IdUsuario })
+                    @Html.ActionLink("Eliminar", "Delete", new { id = usuario.IdUsuario })
+                </td>
+            </tr>
+        }
+
+    }
+    else
+    {
+        <p>No hay usuarios para mostrar.</p>
+    }*@
